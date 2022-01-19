@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Backend/etc/menu.xsd">
+    <menu>
+    
+        <add id="Project_Test::hello"
+            title="CURD"
+            module="Project_Test"
+            sortOrder="51"
+            resource="Project_Test::hello"/>
+        
+        <add id="Project_Test::post"
+          title="ADMIN CRUD OPERATION"
+          module="Project_Test" 
+          sortOrder="10" 
+          action="skitdash/skitdash" 
+          resource="Project_Test::post" 
+          parent="Project_Test::hello"/>
+
+        
+        <add id="Project_Test::new1"
+          title="Crud"
+          module="Project_Test" 
+          sortOrder="100" 
+          action="skitdash/testimonial" 
+          resource="Project_Test::new1" 
+          parent="Project_Test::hello"/>
+
+
+
+
+
+    </menu>
+</config>
